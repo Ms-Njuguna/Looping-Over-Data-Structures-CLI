@@ -50,3 +50,15 @@ while tries < 3:
         print(f'Attempts: {tries}')
 else:    
     print ("Game Over!")
+
+
+# challenge 5
+
+list_of_numbers = [29, 704, 36, 27, 10003, -2020, 390, 11.27]
+
+for num in list_of_numbers:
+    if num < 0:
+        print('Found a negative number')
+        break
+else:
+    print("All numbers are positive")
