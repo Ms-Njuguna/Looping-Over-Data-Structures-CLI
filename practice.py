@@ -17,3 +17,19 @@ for i in range(1, num):
     total += i
 print(f"The total sum is: {total}")
 
+
+# challenge 3
+
+attempts = 0
+
+while attempts < 3:
+    password = input("Enter your password: ")
+    if password == "python123":
+        print("Access granted!")
+        break
+    elif password != "python123":
+        print("Wrong")
+        attempts += 1
+else:  
+    print("Too many attempts. Access denied.")
+   
