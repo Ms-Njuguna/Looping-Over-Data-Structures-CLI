@@ -33,3 +33,20 @@ while attempts < 3:
 else:  
     print("Too many attempts. Access denied.")
    
+
+# challenge 4
+
+secret_number = 7
+tries = 0
+
+while tries < 3:
+    guess = int(input("Guess the secret number: "))
+    if guess == secret_number:
+        print("You got it!")
+        break
+    elif guess != secret_number:
+        print ("Try again!")
+        tries += 1
+        print(f'Attempts: {tries}')
+else:    
+    print ("Game Over!")
